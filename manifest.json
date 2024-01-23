@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Mi Extensión",
+  "version": "1.0",
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "ShinyGames.png"
+    }
+  },
+  "icons": {
+    "128": "ShinyGames.png"
+  }
+}
