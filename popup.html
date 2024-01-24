@@ -1,16 +1,39 @@
-<meta http-equiv="Content-Security-Policy" content="script-src 'self'; object-src 'self';">
-
-
 <html>
-    <head>
-        <title>Mi Extensión</title>
-        <script src="popup.js"></script>
-        <link rel="stylesheet" href="popup.css">
-      </head>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Mi extensión</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
       <body>
 
+        <script src="popup.js"></script>
 
-        <iframe src="Connect4/index.html" height="960px" width="800px" aling="center"></iframe>
+        <iframe name="game" class="game" src="select.html" height="1920px" width="1080px"
+        id="game"></iframe>
+
+         <img src="Click.png" class="imgClick" id="Click">
+
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        
+<div class="popularGames">
+  <div class="selectorGame">
+    <a href="Tetros/index.html" target="game" class="selectGame" onclick="focusGame()">
+      <img src="Tetros/tetrosIcon.png">
+      <span class="gameName">Tetros</span>
+    </a>
+  </div>
+  <div class="selectorGame">
+    <a href="Connect4/index.html" target="game" class="selectGame" onclick="focusGame()">
+      <img src="Connect4/Connect4Icon.png">
+      <span class="gameName">Conecta 4</span>
+    </a>
+  </div>
+</div>
+
 
       </body>
 </html>

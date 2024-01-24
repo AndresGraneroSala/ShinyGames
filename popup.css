@@ -1,6 +1,62 @@
 body{
     background-color: orange;
-    width: 2000px;
-    height: 900px;
+    width: 750px;
+    height: 550px;
+}
 
+iframe.game{
+
+    border: none;
+
+    transform: scale(0.78); /* Cambia el valor de scale para ajustar el tamaño deseado */
+    transform-origin: 0 0; /* Define el punto de origen de la transformación */
+
+    position: absolute;
+    clip: rect(auto, 1020px, 600px, 60px);
+    left: -38px;
+    top: 2px;
+    overflow-x:hidden;
+
+}
+
+a.selectGame{
+    border: 1px solid black;
+    color: black;
+    background-color: rgb(82, 252, 82);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+a.selectGame:hover{
+    color: white;
+}
+
+div.popularGames{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+div.selectorGame{
+    margin: 5px;
+}
+
+div.selectorGame img{
+    height: 99px;
+    width: 99px;
+}
+
+
+
+img.imgClick{
+    opacity: 1;
+    position: absolute;
+    top :2px;
+
+    width: 750px;
+    height: 468px;
 }
