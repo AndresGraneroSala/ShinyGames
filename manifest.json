@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Mi Extensión",
+  "name": "ShinyGames",
   "version": "1.0",
 
   "content_security_policy": {
