@@ -2,20 +2,32 @@ body{
     background-color: orange;
     width: 750px;
     height: 550px;
+    margin: 0;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+
+}
+
+div.game{
+    width: 970px;
+    height: 604px;
+
+    transform: scale(0.7,0.7);
+    transform-origin: top left;
 }
 
 iframe.game{
 
-    border: none;
-
-    transform: scale(0.78); /* Cambia el valor de scale para ajustar el tamaño deseado */
-    transform-origin: 0 0; /* Define el punto de origen de la transformación */
-
-    position: absolute;
-    clip: rect(auto, 1020px, 600px, 60px);
-    left: -38px;
-    top: 2px;
-    overflow-x:hidden;
+    width: 100%; /* Ajusta el ancho del contenido al 100% del iframe */
+    height: 100%; /* Ajusta la altura del contenido al 100% del iframe */
+    margin: 0; /* Elimina los márgenes predeterminados del body dentro del iframe */
+    padding: 0; /* Elimina el relleno predeterminado del body dentro del iframe */
 
 }
 
@@ -35,13 +47,22 @@ a.selectGame:hover{
 }
 
 div.popularGames{
+    
+
+
+    width: 600px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+
+
 }
 
 
 
 div.selectorGame{
+    
     margin: 5px;
 }
 
@@ -52,11 +73,11 @@ div.selectorGame img{
 
 
 
-img.imgClick{
+/*img.imgClick{
     opacity: 1;
     position: absolute;
     top :2px;
 
     width: 750px;
     height: 468px;
-}
+}*/
