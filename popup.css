@@ -1,25 +1,22 @@
 body{
     background-color: orange;
     width: 750px;
-    height: 550px;
+    height: 700px;
     margin: 0;
 
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 0;
-
-}
 
 div.game{
     width: 970px;
     height: 604px;
 
-    transform: scale(0.7,0.7);
+    transform: scale(0.77);
     transform-origin: top left;
+
+    position: absolute;
+    top: 5px;
+
 }
 
 iframe.game{
@@ -47,7 +44,9 @@ a.selectGame:hover{
 }
 
 div.popularGames{
-    
+
+    position: absolute;
+    top: 470px;
 
 
     width: 600px;
@@ -73,11 +72,12 @@ div.selectorGame img{
 
 
 
-/*img.imgClick{
+img.imgClick{
     opacity: 1;
     position: absolute;
     top :2px;
 
     width: 750px;
     height: 468px;
-}*/
+    display: none;
+}
